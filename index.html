@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time!</title>
+	<meta charset="utf-8">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Local Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Firebase link -->
+	<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Here comes the train!</h1>
+				<h3 class="text-center" id="motto">"Eat your heart out, Switzerland"</h3>
+		</div>
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Current Train Schedule</h3>
+				</div>
+				<!-- Table -->
+				<table class="table">
+					<thead>
+						<tr>
+							<th id="train-header">Train Name</th>
+							<th id="destination-header">Destination</th>
+							<th id="frequency-header">Frequency (min)</th>
+							<th id="arrival-header">Next Arrival</th>
+							<th id="minutes-header">Minutes Away</th>
+						</tr>
+					</thead>
+					<tbody class="train-entries">
+						<tr id="train-row">
+							<td id="name-section">Code train</td>
+							<td id="destination-section">Berkeley, CA</td>
+							<td id="frequency-section">25</td>
+							<td id="next-arrival-section">5:35PM</td>
+							<td id="minutes-away-section">12</td>
+						</tr>
+					</tbody>
+				</table> 
+  		</div>
+		</div>
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add a Train</h3>
+				</div>
+				<form name="inputForm" id="entry-form">
+					<div class="form-group">
+						<label>Train Name</label>
+						<input type="text" name="input_name" maxlength="25" class="form-control" id="train-name" placeholder="Gravy Train">
+					</div>
+					<div class="form-group">
+						<label>Destination</label>
+						<input type="text" name="input_destination" maxlength="25" class="form-control" id="train-destination" placeholder="Berkeley, CA">
+					</div>
+					<div class="form-group">
+						<label>First Train Time (hh:mm - military time)</label>
+						<input type="text" name="input_first" maxlength="5" class="form-control" id="train-first-time" placeholder="03:00">
+					</div>
+					<div class="form-group">
+						<label>Frequency (min)</label>
+						<input type="number" name="input_frequency" class="form-control" id="train-frequency" placeholder="10">
+					</div>
+
+					<button class="btn btn-default" id="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Moment.js link -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<!-- jQuery link -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- Local JS file link -->
+	<script type="text/javascript" src="assets/javascript/train_logic.js"></script>
+
+</body>
+</html>

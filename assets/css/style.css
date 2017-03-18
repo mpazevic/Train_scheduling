@@ -1,0 +1,65 @@
+body {
+	background-color: #F0F8FF;
+	font-family: 'Bree Serif', serif;
+}
+
+label {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+h1 {
+	font-family: 'Bree Serif', serif;
+}
+
+#motto {
+	font-family: cursive;
+}
+
+.jumbotron {
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: #FAFAD2;
+}
+
+.panel-default>.panel-heading {
+	background-color: #FAFAD2;
+}
+
+input {
+	margin-left: 14px;
+	margin-right: 15px;
+}
+
+.form-control {
+	width: 95%;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+#submit {
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	background-color: #FAFAD2;
+}
+
+#entry-form {
+	margin-top: 5px;
+}
+
+#thead {
+	margin-left: 15px;
+}
+
+.table {
+	margin-left: 10px;
+	margin-right: auto;
+	width: 98%;
+}
+
+#minutes-header {
+	width: 120px;
+}
